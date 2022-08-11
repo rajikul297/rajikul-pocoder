@@ -1,0 +1,627 @@
+ /*===============================
+      Common Css
+===============================*/
+   
+body {
+    color: #666666;
+    font-family: Georgia;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 960px;
+    width: 96%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+/* Part (4) A  hero_area Ar jonno*/
+.aligenleft{
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+.aligenright{
+    float: right;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+.aligencenter{
+    display: block;
+    margin: 0 auto 15px;
+}
+
+/*===============================
+        Top Header Css
+===============================*/
+
+.header_area {
+    width: 100%;
+    clear: both;
+}
+
+#top_header_area{
+    background: #ba2e1f;
+    width: 100%;
+    padding: 15px 0;
+}
+.inner_top_header{
+    overflow: hidden;
+}
+
+.mini_menu{
+    width: 70%;
+    float: left;
+   padding-top: 5px;
+}
+.mini_menu ul{
+   margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: left;
+}
+.mini_menu ul li{
+   display: inline-block;
+    margin-right: 20px;
+    position: relative;
+}
+.mini_menu ul li::after{
+    content: "";
+    position: absolute;
+    background: #fff;
+    width: 1px;
+    height: 12px;
+    display: block;
+    top: 6px;
+    right: -10px;
+}
+.mini_menu ul li:last-child::after{
+    display: none;
+}
+.mini_menu ul li a{
+   display: block;
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+}
+.mini_menu ul li a:hover{
+    color: #ddd;
+}
+.search_area{
+    width: 30%;
+    float: right;
+}
+.search_area form{
+    background: #fff;
+    max-width: 210px;
+    border-radius: 25px;
+    float: right;
+    padding: 2%;
+    width: 96%;
+
+}
+.search_area input{
+    border: 0px solid;
+    width: 75%;
+    padding: 1%;
+    float: left;
+    color: #000;
+}
+.search_area input[type="submit"]{
+    width: 23%;
+    background: url(img/sharch.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    cursor: pointer;
+}
+
+
+
+
+/*===============================
+        Main Header Css
+===============================*/
+
+#main_header_area{
+    width: 100%;
+    clear: both;
+}
+
+.inner_header{
+    overflow: hidden;
+    padding: 40px 0;
+}
+
+.logo_area {
+    width: 240px;
+    float: left;
+}
+.social_area {
+    padding-top: 10px;
+    float: right;
+    max-width: 600px;
+    width: 100%;
+}
+
+.social_area ul{
+   margin: 0;
+   padding: 0;
+    list-style: none;
+    text-align: right;
+}
+.social_area ul li{
+   display: inline-block;
+    margin-left: 15px;
+}
+.social_area ul a{
+   display: block;
+    text-decoration: none;
+}
+
+.social_area ul a i{
+   background: #333333;
+   display: block;
+    border-radius: 50%;
+    width: 35px;
+    padding-top: 8px;
+    color: #fff;
+    height: 25px;
+    text-align: center;
+    transition: .5s
+}
+.social_area ul li a:hover i{
+   background: #ee802f;
+}
+.social_area ul li a:hover i.fa-linkedin-in{
+   background: #4949c3;
+}
+.social_area ul li a:hover i.fa-twitter{
+   background: #3ba5dd;
+}
+.social_area ul li a:hover i.fa-pinterest{
+   background: #e72d2d;
+}
+.social_area ul li a:hover i.fa-google-plus-g{
+   background: #d92929;
+}
+.social_area ul li a:hover i.fa-rss{
+   background: #ee802f;
+}
+
+
+/*===============================
+        Main Menu Css
+===============================*/
+#main_menu{
+    width: 100%;
+    clear: both;
+}
+/*
+Ata img Deye main_menuR Background;
+.inner_menu{
+    background: url(img/menu_bar.png);
+    background-repeat: repeat-x;
+    background-size: 100% 100%;
+    min-height: 30px;
+    padding: 15px 0;
+    border-radius: 10px;
+    z-index: 1;
+}
+*/
+
+/*Ata Css Deye Background*/
+.inner_menu{
+    background: #333333;
+    position: relative;
+    min-height: 30px;
+    padding: 15px 0;
+    border-radius: 10px;
+    z-index: 1;
+}
+.inner_menu::after{
+    content: "";
+    position: absolute;
+    background: #2b2b2b;
+    width: 100%;
+    height: 50%;
+    display: block;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+#main_menu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+#main_menu ul li{
+    display: inline-block;
+    margin: 0 5px;
+    position: relative;
+}
+#main_menu ul li a{
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: px;
+}
+#main_menu ul li a:hover{
+    color: #ba2e1f;
+}
+#main_menu ul li:hover a{
+    color: #ba2e1f;
+}
+#main_menu ul li:hover ul li a{
+    color: #fff;
+}
+
+/*==============================
+     DropDown Menu Bar Style
+================================*/
+
+#main_menu ul ul{
+    position: absolute;
+    background: #ba2e1f;
+    width: 180px;
+    left: -999999px;
+    top: 33px;
+}
+#main_menu ul li:hover ul{
+    left: 0;
+}
+#main_menu ul li:hover ul ul{
+    left: -999999px;
+}
+/*Ata 3no DropDown kace anar Somoy 180px Thakbe*/
+#main_menu ul ul ul{
+    left: -999999px;
+    top:0px;
+}
+#main_menu ul li ul li:hover ul{
+    left: 180px;
+}
+#main_menu ul ul li{
+    margin: 0;
+    display: block;
+}
+#main_menu ul ul li a:hover{
+   background: #333333;
+    color: #fff;
+}
+#main_menu ul ul li:hover ul li a{
+   background: none;
+    color: #fff;
+}
+#main_menu ul ul li ul li a:hover{
+   background: #333333;
+    color: #fff;
+}
+
+/*===============================
+       Slider Css
+===============================*/
+#slider_area{
+    margin-top: 20px;
+}
+.item{
+    position: relative;
+}
+.slider_caption{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.slider_caption h1{
+    color: #fff;
+    font-size: 35px;
+}
+
+/*===============================
+       Hero Area Css
+===============================*/
+#hero_area{
+    background: #fff;
+    margin: 0;
+    padding: 0;
+}
+.inner_hero{
+    overflow: hidden;
+}
+
+.inner_hero h2{
+    color: #000;
+    font-size: 86px;
+    line-height: 1em;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+.inner_hero p{
+    color: #666666;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.inner_hero a{
+    float: right;
+    color: #ba2e1f;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.inner_hero a:hover{
+    color: blue;
+    text-decoration: underline;
+}
+
+
+/*===============================
+        Work_Area Css
+===============================*/
+#work_area{
+    background: #f2f2f2;
+    padding: 45px 0;
+}
+.inner_work{
+    overflow: hidden;
+}
+/*=======total area====*/
+.child_work{
+    width: 32%;
+    float: left;
+    margin: 0 1% 10px;
+}
+.child_work h2{
+    color: #333333;
+    font-size: 26px;
+    font-weight: normal;
+}
+.child_work p{
+    color: #878787;
+    font-size: 14px;
+    font-weight: normal;
+}
+.child_work a{
+    color: #b92d1f;
+    font-size: 14px;
+    font-weight: normal;
+    text-decoration: none;
+    clear: both;
+    float: right;
+    display: inline-block;
+}
+.child_work a:hover{
+    color: #262626;
+}
+/*==========Abute Area=======*/
+.abute_area{
+    margin-left: 0;
+}
+.abute_area img{
+    border: 1px solid #dfdfdf;
+    padding: 5px;
+    display: block;
+    margin-bottom: 15px;
+}
+/*================Sarvice_Area========*/
+.sarvice_area{}
+.child_sarvice{
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+.child_sarvice .sarvice_image{
+    width: 25%;
+    float: left;
+}
+.child_sarvice .sarvice_text{
+    width: 75%;
+    float: right;
+}
+.child_sarvice .sarvice_text h3{
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 0px;
+}
+.child_sarvice .sarvice_text p{
+    margin-top: 0;
+    line-height: 1.4em
+}
+/*================testimonial_area=========*/
+.testimonial_area{
+    margin-right: 0;
+}
+.child_testimonial{
+    width: 100%;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+.child_testimonial h3{
+    background: url(img/comment.png);
+    background-repeat: no-repeat;
+    color: #989898;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 15px 0px 15px 65px;
+    margin: 0;
+}
+.child_testimonial h3 span{
+    font-weight: normal;
+}
+/*css Diye Comment Cotetion Google font Ar maddhome
+.child_testimonial h3 strong{
+    line-height: em;
+    font-family: google--font;
+    font-size: 100px;
+    font-weight: normal;
+}
+*/
+ 
+/*===============================
+        Footer_Area Css
+===============================*/
+#footer_area{
+    background: #fff;
+    padding: 40px 0;
+}
+.inner_footer{
+    overflow: hidden;
+}
+.child_foooter{
+    padding: 1%;
+    margin: 0 1% 10px;
+    width: 21%;
+    float: left;
+}
+/*=======-=====-=-=Sokol H3 =======*/
+.child_foooter h3{
+    border-top: 1px solid #666666;
+    color: #666666;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 0;
+    padding-top: 5px;
+}
+.child_foooter h4{
+    color: #666666;
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+.child_foooter h4 a{
+    color: #666666;
+    float: none;
+    text-decoration: none;
+}
+.child_foooter h4 a:hover{
+    color: #b92d1f;
+}
+.child_foooter h6{
+    margin: 0 0 10px;
+    font-size: 12px;
+    line-height: 1.3em;
+    
+}
+        /* =================Sokol P ===== */
+.child_foooter p{
+    color: #666666;
+    font-size: 14px;
+    margin-top: 0;
+}
+.child_foooter p a{
+    color: #b92d1f;
+    text-decoration: none;
+}
+.child_blog{
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.child_blog a{
+    color: #b82c1f;
+    text-decoration: none;
+    float: right;
+}
+.child_foooter p a:hover{}
+
+    /*=============2no Line QUICK LINKS =========*/
+.child_foooter ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.child_foooter ul ul{
+    display: none;
+}
+.child_foooter li{
+    background: url(img/next.png) no-repeat 
+    center left;
+    padding-left: 20px;
+    padding-bottom: 8px;
+    display: block;
+    border-bottom: 1px solid #666666
+}
+.child_foooter li:last-child{
+    border-bottom: 0px solid;
+}
+.child_foooter li a{
+    color: #666666;
+    font-size: 14px;
+    text-decoration: none;
+}
+.child_foooter li a:hover{
+    color: #b92d1f;
+}
+        /*==============Form Area==========*/
+.child_foooter input{
+    background: #c3b9b9;
+    border: 0px solid;
+    border-radius: 10px;
+    padding: 10px 2%;
+    margin-bottom: 10px;
+    width: 96%;
+}
+.child_foooter textarea{
+    background: #c3b9b9;
+    border: 0px solid;
+    border-radius: 10px;
+    padding: 10px 2%;
+    margin-bottom: 10px;
+    width: 96%;
+}
+.child_foooter input[type="submit"]{
+    width: 80px;
+    color: #b92d1f;
+    cursor: pointer;
+}
+.child_foooter input[type="submit"]:hover{
+    background: #b92d1f;
+    color: #fff;
+}
+
+/*===============================
+        Footer_Area Css
+===============================*/
+#copyright_area{
+    background: #c3b9b9;
+    padding: 25px 0;
+}
+.inner_copyright{
+    overflow: hidden;
+}
+.inner_copyright p{
+    margin: 0;
+    color: #919191;
+    font-size: 12px;
+}
+.left_copyright{
+    float: left;
+    width: 60%;
+}
+.right_copyright{
+    float: right;
+    text-align: right;
+      width: 40%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
